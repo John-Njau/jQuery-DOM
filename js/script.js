@@ -1,29 +1,29 @@
 $('h1').click(
-    function(){
+    function () {
         alert("Header tag")
     }
 )
 
 // Buttons return a string and change the background colors
 
-$().ready(function(){
-    $("button#hello").click(function(){
+$().ready(function () {
+    $("button#hello").click(function () {
         $("body").css("background-color", "blue");
-        $("#isaid").prepend("<p>hello</p>");
-        $("#websaid").prepend("<p>hello</p>")
+        $("ul#user").prepend("<li>hello</li>");
+        $("ul#webPage").prepend("<li>hello</li>")
     });
 
-    $("button#goodbye").click(function(){
+    $("button#goodbye").click(function () {
         $("body").css("background-color", "white")
         $("button").css("color", "white");
-        $("#isaid").prepend("<p>goodbye</p>");
-        $("#websaid").prepend("<p>goodbye</p>")
+        $("#user").append("<li>goodbye</li>");
+        $("#webPage").append("<li>goodbye</li>")
     })
 
     $('button#stop').click(
-        function(){
+        function () {
             $("body").css("background-color", "red")
-            $("#isaid").prepend("<p>STOP copying Me!!*^&</p>");
-            $("#websaid").prepend("<p>Well, uuhm!</p>");
+            $("#user").prepend("<li>STOP copying Me!!*^&</li>");
+            $("#webPage").prepend("<li>Well, uuhm!</li>");
         });
 });
